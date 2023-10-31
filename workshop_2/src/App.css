@@ -1,0 +1,77 @@
+#root{
+  width: 1440px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: rgba(12, 10, 10, 0.625);
+}
+.shopping_items {
+  border: 5px solid white;
+  width: 30%;
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  color: rgb(224, 208, 194);
+  padding: 20px;
+  line-height: 1.2em;
+  border-radius: 8px;
+}
+.container {
+  /* border: 5px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+h2 {
+  color: aliceblue;
+  font-size: 1.1rem;
+  border-bottom: 2px solid darkturquoise;
+}
+span {
+  color: aqua;
+  font-size: 1.5rem;
+}
+button {
+  width: 30%;
+  height: 4vh;
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 1rem;
+  cursor: pointer;
+}
+button:hover {
+  font-size: 1.05rem;
+  color: darkturquoise;
+}
+#box{
+  width: 1440px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: rgb(146, 139, 139);
+}
+.divContainer{
+  width: 40%;
+  border: 5px solid rgba(12, 10, 10, 0.625);
+  font-size: 1.2rem;
+}
+.div1{
+  background-color: white;
+  height: 13.3vh;
+}
+.div2{
+  background-color: rgba(255, 0, 0, 0.638);
+  height: 13.3vh;
+}
+.div3{
+  background-color: rgba(0, 0, 255, 0.274);
+  height: 13.3vh;
+}
+.div4{
+  background-color: rgba(0, 128, 0, 0.296);
+  height: 13.3vh;
+}
+.box_container{
+  display: flex;
+  justify-content: space-evenly;
+  }
