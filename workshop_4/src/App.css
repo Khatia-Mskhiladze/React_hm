@@ -1,0 +1,59 @@
+body {
+  background-color: rgba(11, 9, 9, 0.91);
+}
+#root {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 70px;
+  display: grid;
+  place-items: center;
+}
+button {
+  background-color: rgb(39, 38, 38);
+  color: yellow;
+  width: 80%;
+  height: 8.5vh;
+  margin-top: 20px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+button:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+input {
+  width: 80%;
+  height: 7vh;
+  margin-top: 30px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  background-color: rgb(223, 248, 226);
+  color: black;
+}
+.userDiv {
+  background-color: rgba(128, 255, 0, 0.31);
+  width: 29%;
+  color: aliceblue;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  border-radius: 8px;
+}
+.usersContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: aliceblue;
+}
+.userDiv:hover {
+  cursor: pointer;
+  box-shadow: 5px 15px rgba(0, 0, 0, 0.418);
+}
+.usersButton {
+  width: 100%;
+}
+.usersButton:hover {
+  cursor: pointer;
+}
