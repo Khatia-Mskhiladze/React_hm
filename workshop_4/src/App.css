@@ -36,10 +36,20 @@ input {
   width: 29%;
   color: aliceblue;
   font-size: 0.9rem;
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  justify-content: center;
   padding: 20px;
   border-radius: 8px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.userDivText2{
+  font-weight: bolder;
+}
+.userDivText3{
+background-color: rgba(0, 0, 0, 0.267);
+color: white;
+border-radius: 8px;
 }
 .usersContainer {
   display: flex;

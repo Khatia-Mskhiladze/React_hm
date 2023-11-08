@@ -7,6 +7,7 @@ const Users = () => {
   const [users, setUsers] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState('');
+  const [usersCount, setUsersCount] = useState(5)
 
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/posts').then((res) => {
@@ -19,7 +20,7 @@ const Users = () => {
         setUsers(data);
       })
       .catch(error => {
-        console.log(error);
+        // console.log(error);
         setError(error.message);
       })
       .finally(() => {
@@ -40,6 +41,12 @@ const Users = () => {
       {users.slice(0, 5).map((user) => {
         <User data={user} key={user.id} />
       })}
+
+      {users.slice(0, usersCount).map(user => <User data={user} key={user.id} />)}
+
+      {users.length > usersCount ? (
+        <button className='usersButton' onClick={() => setUsersCount((prev)=>prev +1)}>Show more</button>)
+        : null}
 
     </div>
   )
