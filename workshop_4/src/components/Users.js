@@ -20,7 +20,6 @@ const Users = () => {
         setUsers(data);
       })
       .catch(error => {
-        // console.log(error);
         setError(error.message);
       })
       .finally(() => {
@@ -38,14 +37,11 @@ const Users = () => {
       {
         isLoading && <ScaleLoader />
       }
-      {users.slice(0, 5).map((user) => {
-        <User data={user} key={user.id} />
-      })}
-
+     
       {users.slice(0, usersCount).map(user => <User data={user} key={user.id} />)}
 
       {users.length > usersCount ? (
-        <button className='usersButton' onClick={() => setUsersCount((prev)=>prev +1)}>Show more</button>)
+        <button className='usersButton' onClick={() => setUsersCount((prev)=>prev + 1)}>Show more</button>)
         : null}
 
     </div>
