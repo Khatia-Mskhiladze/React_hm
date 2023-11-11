@@ -1,0 +1,71 @@
+#root {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0, auto;
+  padding: 30px;
+  background-color: rgba(102, 128, 59, 0.148);
+}
+.homePageContainer {
+  text-align: center;
+}
+.mainText {
+  font-size: 3rem;
+}
+.searchDiv {
+  display: flex;
+  margin-top: 40px;
+}
+.inputContainer{
+  width: 30%;
+}
+input{
+  font-size: 1.2rem;
+}
+.searchText {
+  margin-right: 15px;
+  font-size: 2rem;
+}
+button {
+  width: 30%;
+  height: 4vh;
+  background-color: rgba(66, 110, 66, 0.621);
+  font-size: 1.2rem;
+  border: 0;
+}
+button:hover {
+  box-shadow: 5px 5px 15px rgb(29, 36, 17);
+}
+.oneUni {
+  width: 30%;
+  padding: 30px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  background-color: rgb(91, 84, 84);
+  color: white;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  line-height: 1.5;
+}
+h4 {
+  color: antiquewhite;
+}
+.oneUniButton {
+  width: 55%;
+  height: 5vh;
+  margin-top: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background-color: rgb(147, 182, 88);
+  border: 0;
+  border-radius: 8px;
+}
+.oneUniButton:hover {
+  box-shadow: 5px 5px 15px rgb(147, 182, 88);
+}
+.unisContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
