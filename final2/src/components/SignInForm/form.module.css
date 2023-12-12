@@ -1,0 +1,50 @@
+.formWrapper {
+  padding: 10px 0 0 0;
+  background-color: rgba(0, 0, 0, 0);
+  color: antiquewhite;
+  display: grid;
+  gap: 15px;
+}
+input {
+  font-size: 1.2rem;
+}
+label {
+  font-size: 1.3rem;
+}
+.submit {
+  width: 10%;
+  height: 5vh;
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: antiquewhite;
+}
+.submit:hover {
+  background-color: #bfb40e;
+  transition: all 1s;
+  font-size: 1.2rem;
+}
+.backButton {
+  width: 20%;
+  height: 5vh;
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: rgba(234, 231, 227, 0.571);
+  color: aliceblue;
+}
+.backButton:hover {
+  background-color: rgb(200, 151, 151);
+  transition: all 1s;
+}
+@media(max-width: 770px){
+  .backButton {
+    width: 30%;
+  }
+}
+@media(max-width: 550px){
+  .backButton {
+    width: 50%;
+  }
+  .submit {
+    width: 20%;
+  }
+}
