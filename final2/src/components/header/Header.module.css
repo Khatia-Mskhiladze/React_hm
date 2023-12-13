@@ -43,12 +43,16 @@
 }
 
 @media (max-width: 815px) {
+  .header{
+    padding: 10px;
+
+  }
   .logo {
     width: 10%;
     height: 8vh;
   }
   .headerText {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 @media (max-width: 440px) {
