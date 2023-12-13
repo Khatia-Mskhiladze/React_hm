@@ -5,7 +5,6 @@ import { useAuthContext } from "../../context/auth/AuthContextProvider";
 import { logInAction } from "../../context/auth/actions";
 import { Link, useNavigate } from "react-router-dom";
 import { HOME_PAGE } from "../../constants/routes";
-
 import { PacmanLoader } from "react-spinners";
 
 const Form = () => {

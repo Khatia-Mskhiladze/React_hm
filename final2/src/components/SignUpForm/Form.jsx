@@ -3,21 +3,27 @@ import styles from "./form.module.css";
 import { signUp } from "../../api/auth";
 import { Link, useNavigate } from "react-router-dom";
 import { HOME_PAGE, SIGN_IN_PAGE } from "../../constants/routes";
+import {PacmanLoader} from 'react-spinners';
 const Form = () => {
   const [info, setInfo] = useState({
     userName: "",
     password: "",
     email: "",
   });
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const signUpHandler = (e) => {
     e.preventDefault();
+    setLoading(true);
     signUp(info)
       .then(() => {
         navigate(SIGN_IN_PAGE, { state: { success: true } });
       })
       .catch((err) => {
-        console.log(err);
+        setInfo(err);
+      })
+      .finally(() => {
+        setLoading(false);
       });
   };
   return (
@@ -59,6 +65,7 @@ const Form = () => {
           });
         }}
       />
+       {loading && <PacmanLoader color="#36d7b7" />}
       <button className={styles.submit} type="" onClick={signUpHandler}>
         Submit
       </button>
