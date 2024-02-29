@@ -1,0 +1,31 @@
+.footer {
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.896);
+    color: white;
+    border-top: 1px solid #bfb40e;
+  }
+  .footer_icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 1rem;
+  }
+   #insta, #twitter, #facebook{
+    background-color: antiquewhite;
+    border-radius: 50%;
+    padding: 3px;
+  }
+  #insta:hover {
+    background-color: rgb(133, 131, 131);
+  }
+  #twitter:hover {
+    background-color: rgb(133, 131, 131);
+  }
+  #facebook:hover {
+    background-color: rgb(133, 131, 131);
+  }

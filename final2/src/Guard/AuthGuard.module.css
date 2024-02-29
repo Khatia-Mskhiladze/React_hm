@@ -1,0 +1,47 @@
+.firstPage {
+    background-color: rgba(0, 0, 0, 0.896);
+    padding: 200px 0 200px 0;
+    color: antiquewhite;
+    display: grid;
+    gap: 30px;
+  }
+  .signInButton {
+    width: 10%;
+    height: 5vh;
+    font-size: 1rem;
+    border-radius: 8px;
+    background-color: antiquewhite;
+  }
+  .signInButton:hover {
+    background-color: #bfb40e;
+    transition: all 1s;
+  }
+  .signUpButton {
+    width: 10%;
+    height: 5vh;
+    font-size: 1rem;
+    border-radius: 8px;
+    background-color: antiquewhite;
+  }
+  .signUpButton:hover {
+    background-color: #bfb40e;
+    transition: all 1s;
+  }
+  
+@media (max-width: 815px) {
+    .signInButton {
+      width: 20%;
+    }
+    .signUpButton {
+      width: 20%;
+    }
+      }
+  @media (max-width: 440px) {
+    .signInButton {
+      width: 30%;
+    }
+    .signUpButton {
+      width: 30%;
+    }
+     }
+  
